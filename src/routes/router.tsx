@@ -6,6 +6,7 @@ import { Error404 } from '../components/pages/Error404';
 import { Prices } from '../components/pages/Prices';
 import { Puma } from '../components/pages/Puma';
 import { PATHS } from './paths';
+import {Model} from "../components/pages/Model.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ export const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error404 />,
     children: [
+      {
+        path: ':model/:id',
+        element: <Model/>
+      },
       {
         index: true,
         element: <Navigate to={PATHS.ADIDAS} replace />,

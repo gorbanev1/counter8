@@ -43,7 +43,7 @@ export const Puma = () => {
           <h2>PUMA</h2>
           <div style={{display: 'flex', justifyContent: 'center'}}>
               {pumaArr.map((puma) => (
-                <Link key={puma.id} to={`/puma/${puma.id}`}>
+                  <Link key={puma.id} to={`/puma/${puma.id}`}>
                     <img
                       src={puma.picture}
                       alt={puma.model}

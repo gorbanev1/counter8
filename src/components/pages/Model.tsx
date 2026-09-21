@@ -15,6 +15,7 @@ export const Model = () => {
     // const params=useParams()
     const { model, id } = useParams();
     console.log(model)
+    console.log(id)
 
     //const currentModel=adidasArr.find(el=>el.id===Number(id))
     const currentModel = model
